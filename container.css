@@ -1,0 +1,17 @@
+.container-lg{
+    position: relative;
+}
+
+.container-md{
+    max-width: 800px;
+}
+
+.container-s{
+max-width: 600px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}

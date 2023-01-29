@@ -32,62 +32,7 @@ header{
     transition:all 0.5s;
 }
 
-/* responsive menu start */
 
-
-@media only screen and (max-width: 600px) {
-  
-.menu-icon{
-    display: block;
-    transition:all 0.5s;
-}
-    .nav-row{
-        position: relative;
-    }
-.nav-list{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: antiquewhite;
-    top: 100%;
-    left: -100%;
-    width: 100%;
-    transition: all 0.5s;
-    
-}
-
-.nav-item{
-    display: inline-block;
-    padding: 1rem;
-    
-}
-.nav-link{
-    display: block;
-    
-    height: 100%;
-
-}
-
-.nav-list.active{
-    left: 0;
-}
-
-.menu-icon.active .bar:nth-child(2){
-    opacity: 0;
-    
-}
-.menu-icon.active .bar:nth-child(1){
-    transform: translateY(8px) rotate(45deg);
-}
-.menu-icon.active .bar:nth-child(3){
-    transform: translateY(-8px) rotate(-45deg);
-}
-  }
-
-
-
-
-/* responsive menu end */
 
 .logo{
 
@@ -151,6 +96,7 @@ position: relative;
 .nav-link{
 color: rgba(129,76,0,255);
 font-size: 0.6rem;
+font-weight: 600;
 
 }
 
@@ -173,13 +119,61 @@ transform-origin: right;
     transform-origin:left ;
 }
 
-.logo-text{
-    
-    background: -webkit-linear-gradient(rgba(129,76,0,255), rgb(76,44,4));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
+@media only screen and (max-width: 600px) {
+  
+    .menu-icon{
+        display: block;
+        transition:all 0.5s;
+    }
+        .nav-row{
+            position: relative;
+        }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: antiquewhite;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        transition: all 0.5s;
+        
+        
+    }
+    
+    .nav-item{
+        display: inline-block;
+        
+        
+    }
+    .nav-link{
+        display: block;
+        font-size: 0.7rem;
+        padding: 1rem;
+      
+    }
+    
+    .nav-list.active{
+        left: 0;
+    }
+    
+    .menu-icon.active .bar:nth-child(2){
+        opacity: 0;
+        
+    }
+    .menu-icon.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-icon.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+      }
+    
+    
+    
+    
+    /* responsive menu end */
 header{
     overflow: hidden;
 
